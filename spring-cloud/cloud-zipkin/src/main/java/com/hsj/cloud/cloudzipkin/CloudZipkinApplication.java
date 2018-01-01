@@ -1,15 +1,14 @@
-package com.hsj.cloud.cloudeureka;
+package com.hsj.cloud.cloudzipkin;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 import zipkin.server.EnableZipkinServer;
 
 @SpringBootApplication
-@EnableEurekaServer
-public class CloudEurekaApplication {
+@EnableZipkinServer
+public class CloudZipkinApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CloudEurekaApplication.class, args);
+		SpringApplication.run(CloudZipkinApplication.class, args);
 	}
 }

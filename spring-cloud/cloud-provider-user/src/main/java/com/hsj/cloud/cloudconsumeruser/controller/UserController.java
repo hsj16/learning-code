@@ -14,7 +14,8 @@ public class UserController {
 
   @GetMapping("/{id}")
   public User findById(@PathVariable Long id) {
-    User findOne = this.userRepository.findOne(id);
-    return findOne;
+//    User findOne = this.userRepository.findOne(id);
+//    return findOne;
+    throw new RuntimeException("xx");
   }
 }
